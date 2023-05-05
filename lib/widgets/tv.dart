@@ -4,8 +4,8 @@ import 'package:movieapp/description.dart';
 import '../utils/text.dart';
 
 class TV extends StatelessWidget {
-  final List tv;
-  const TV({Key key, this.tv}) : super(key: key);
+  final List? tv;
+  const TV({Key? key, this.tv}) : super(key: key);
 
 
 
@@ -20,7 +20,7 @@ class TV extends StatelessWidget {
             modified_text(text: 'Popular TV Shows', size: 26,),
             SizedBox(height: 10,),
             Container(height: 200,
-                child: ListView.builder(itemCount: tv.length, scrollDirection: Axis.horizontal ,itemBuilder: (context, index){
+                child: ListView.builder(itemCount: tv!.length, scrollDirection: Axis.horizontal ,itemBuilder: (context, index){
                   return InkWell(
                     onTap: (){
 
