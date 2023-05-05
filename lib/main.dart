@@ -20,7 +20,7 @@ void main()=>runApp(new MyApp());
     }
   }
   class Home extends StatefulWidget {
-    const Home({Key key}) : super(key: key);
+    const Home({Key? key}) : super(key: key);
   
     @override
     State<Home> createState() => _HomeState();
@@ -61,10 +61,16 @@ print(tv);
     @override
     Widget build(BuildContext context) {
       return Scaffold(
+
         backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           title: modified_text(text: 'Flutter Movie App ❤️'),),
+        bottomNavigationBar: BottomNavigationBar(items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home',),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search')
+        ],),
         body: ListView(
           children: [
             TV(tv: tv,),

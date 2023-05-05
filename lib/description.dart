@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movieapp/utils/text.dart';
 
 class Description extends StatelessWidget {
-  const Description({Key key, this.name, this.description, this.bannerurl, this.posterurl, this.vote, this.launch_on}) : super(key: key);
+  const Description({Key? key, required this.name, required this.description, required this.bannerurl, required this.posterurl, required this.vote, required this.launch_on}) : super(key: key);
   final String name, description, bannerurl, posterurl, vote, launch_on;
 
   @override
