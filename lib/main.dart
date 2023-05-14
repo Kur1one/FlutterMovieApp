@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movieapp/utils/text.dart';
+import 'package:movieapp/widgets/search_screen.dart';
 import 'package:movieapp/widgets/toprated.dart';
 import 'package:movieapp/widgets/trending.dart';
 import 'package:movieapp/widgets/tv.dart';
@@ -24,7 +25,7 @@ void main() async {
             brightness: Brightness.dark, primaryColor: Colors.red),
         routes: {
           '/': (context) => SplashScreen(),
-          '/home': (context) => Home(),
+          '/home': (context) => SearchScreen(),
           '/login': (context) => SignInScreen(),
           '/register': (context) => SignUpScreen(),
         },
